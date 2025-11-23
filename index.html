@@ -9,66 +9,78 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f7f7f7;
+            background: #f0f4f8;
+            line-height: 1.7;
         }
         header {
-            background: #003366; /* UoH dark blue */
+            background: linear-gradient(135deg, #003366, #0055a5);
             color: white;
-            padding: 30px 20px;
+            padding: 40px 20px;
             text-align: center;
         }
         header img {
-            max-height: 80px;
+            max-height: 90px;
             display: block;
-            margin: 0 auto 10px;
+            margin: 0 auto 15px;
         }
         nav {
-            background: #0055a5; /* UoH primary blue */
-            padding: 12px;
+            background: #003366;
+            padding: 15px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 18px;
             font-weight: bold;
-            transition: color 0.3s;
+            font-size: 16px;
+            transition: 0.3s;
         }
         nav a:hover {
-            color: #ffd700; /* gold hover */
+            color: #ffd700;
         }
         .container {
-            max-width: 1000px;
-            margin: 40px auto;
+            max-width: 1100px;
+            margin: 50px auto;
             background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
         }
         h2 {
             color: #003366;
+            margin-bottom: 15px;
         }
-        footer {
-            text-align: center;
-            padding: 25px;
-            margin-top: 40px;
-            background: #003366;
-            color: white;
-        }
-        ul.thematic-areas li {
-            margin-bottom: 8px;
+        .thematic-areas li {
+            margin-bottom: 10px;
         }
         .btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 25px;
             background: #0055a5;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
         }
         .btn:hover {
             background: #003366;
+        }
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+        .section-intro {
+            font-size: 17px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -76,8 +88,8 @@
     <header>
         <img src="https://upload.wikimedia.org/wikipedia/en/6/60/University_of_Hargeisa_Logo.png" alt="University of Hargeisa Logo" />
         <h1>University of Hargeisa First International Research Conference</h1>
-        <p>Advancing Knowledge Through Innovation and Collaboration</p>
-        <p><strong>Dates: 29th & 30th April 2025</strong></p>
+        <p>Advancing Knowledge Through Innovation, Collaboration, and Excellence in Research</p>
+        <p><strong>29–30 April 2025 | University of Hargeisa, Somaliland</strong></p>
     </header>
 
     <nav>
@@ -90,62 +102,73 @@
 
     <div class="container" id="cfp">
         <h2>Call for Papers</h2>
-        <p>We invite researchers, scholars, and practitioners to submit abstracts addressing the following thematic areas:</p>
+        <p class="section-intro">The University of Hargeisa invites scholars, researchers, development partners, practitioners, and students to submit abstracts for the First International Research Conference. This landmark event aims to bring together global and local experts to discuss emerging evidence, transformative solutions, and contextual innovations that address Somaliland’s development challenges.</p>
+
+        <p>Conference submissions may include empirical studies, theoretical contributions, policy analyses, systematic reviews, innovative community-based findings, and cross‑disciplinary research aligned with the following thematic areas:</p>
+
         <ul class="thematic-areas">
-            <li>Population Health and Social Well Being</li>
-            <li>Sustainable Development and Economic Diversification</li>
-            <li>Education, Technology and Human Capital</li>
-            <li>Governance, Peace Building and State Relations</li>
-            <li>Climate Change, Agriculture and Livestocks, Environmental Resilience</li>
+            <li><strong>Population Health and Social Well‑Being</strong> – maternal and child health, NCDs, mental health, health systems strengthening, public health innovations.</li>
+            <li><strong>Sustainable Development and Economic Diversification</strong> – trade, entrepreneurship, blue economy, GDP growth, economic resilience.</li>
+            <li><strong>Education, Technology, and Human Capital</strong> – digital innovation, AI in education, TVET, higher education quality, human resource development.</li>
+            <li><strong>Governance, Peacebuilding, and State Relations</strong> – security, institutional reform, diplomacy, elections, public administration.</li>
+            <li><strong>Climate Change, Agriculture, Livestock, and Environmental Resilience</strong> – drought resilience, food systems, natural resource management, green technologies.</li>
         </ul>
+
+        <p><strong>Submission Deadline:</strong> 15 March 2025</p>
+        <p><strong>Notification of Acceptance:</strong> 1 April 2025</p>
+        <p><strong>Format:</strong> Abstracts should be max 300 words, include background, methods, key findings, and conclusion.</p>
+
         <a href="#" class="btn">Submit Abstract</a>
     </div>
 
     <div class="container" id="committee">
         <h2>Organizing Committee</h2>
+        <p class="section-intro">The conference is organized by the University of Hargeisa Research, Innovation and Partnerships Office in collaboration with academic units and national stakeholders. The committee oversees scientific review, programme development, logistics, and partnerships.</p>
+
         <ul>
-            <li>Conference Chair: Dr. Khalid Ali Ahmed – Vice President, Research, Innovation and Partnerships, University of Hargeisa</li>
-            <li>Conference Vice Chair: Prof. Jonah Kiruja – Director, Research, Grants & Community Service</li>
-            <li>Scientific Review Committee: Dr. Soheir Hassan Ahmed – Director, School of Graduate Studies</li>
-            <li>Logistics & Administration: Eng Awil Mohamed Ahmed – Conference Coordination</li>
+            <li><strong>Conference Chair:</strong> Dr. Khalid Ali Ahmed – Vice President, Research, Innovation & Partnerships</li>
+            <li><strong>Conference Vice Chair:</strong> Prof. Jonah Kiruja – Director, Research, Grants & Community Service</li>
+            <li><strong>Scientific Review Committee:</strong> Dr. Soheir Hassan Ahmed – Director, School of Graduate Studies</li>
+            <li><strong>Programme & Technical Committee:</strong> Representatives from all 7 University Colleges</li>
+            <li><strong>Logistics & Administration:</strong> Eng. Awil Mohamed Ahmed – Conference Coordination Lead</li>
+            <li><strong>International Advisory Panel:</strong> Partners from KCL, Karolinska Institutet, Uppsala University, and University of Washington</li>
         </ul>
     </div>
 
     <div class="container" id="program">
-        <h2>Program</h2>
-        <p><strong>29th April 2025:</strong></p>
+        <h2>Conference Program</h2>
+        <p class="section-intro">The two‑day conference features keynote addresses, scientific paper sessions, panel discussions, policy dialogues, exhibitions, and networking activities. A detailed programme will be shared after abstract review.</p>
+
+        <p><strong>Day 1 – 29 April 2025</strong></p>
         <ul>
-            <li>08:30 – Registration</li>
-            <li>09:00 – Opening Ceremony & Welcome Remarks</li>
-            <li>10:00 – Keynote Address</li>
-            <li>11:30 – Coffee Break</li>
-            <li>12:00 – Parallel Sessions</li>
-            <li>14:00 – Lunch Break</li>
-            <li>15:00 – Poster Presentations</li>
+            <li>08:30 – Registration & Networking Breakfast</li>
+            <li>09:00 – Opening Ceremony & Welcome Remarks by University Leadership</li>
+            <li>10:00 – Keynote Lecture: "Research and Development for Emerging Economies"</li>
+            <li>11:30 – Coffee Break & Exhibition Tour</li>
+            <li>12:00 – Parallel Scientific Sessions (Thematic Streams)</li>
+            <li>14:00 – Lunch & Poster Viewing</li>
+            <li>15:00 – Student Research Presentations</li>
+            <li>16:30 – End of Day 1</li>
         </ul>
-        <p><strong>30th April 2025:</strong></p>
+
+        <p><strong>Day 2 – 30 April 2025</strong></p>
         <ul>
-            <li>09:00 – Scientific Sessions</li>
-            <li>11:00 – Panel Discussions</li>
+            <li>09:00 – High‑Level Panel Dialogue on Development Priorities</li>
+            <li>11:00 – Scientific Paper Sessions (Continued)</li>
             <li>13:00 – Lunch Break</li>
-            <li>14:00 – Awards & Certificates</li>
-            <li>15:00 – Closing Ceremony</li>
+            <li>14:00 – Awards Ceremony (Best Abstract, Best Young Researcher)</li>
+            <li>15:00 – Closing Ceremony & Conference Communiqué</li>
+            <li>16:00 – Networking Session</li>
         </ul>
     </div>
 
     <div class="container" id="venue">
         <h2>Venue</h2>
-        <p>University of Hargeisa Main Campus, Hargeisa, Somaliland.</p>
+        <p>The conference will take place at the University of Hargeisa Main Campus, located in the heart of Hargeisa. The venue offers modern conference halls, breakout rooms, technology‑enhanced presentation spaces, and exhibition areas.</p>
+        <p>Maps, transportation options, and accommodation recommendations will be provided to all registered participants.</p>
     </div>
 
     <div class="container" id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:director.rcs@uoh.edu.so">research@uoh.edu.so</a></p>
-        <p>Phone: +252 XXX XXX XXX</p>
-    </div>
-
-    <footer>
-        &copy; 2025 University of Hargeisa Research Conference
-    </footer>
-</body>
-</html>
+        <p>For inquiries regarding submissions, registration, partnerships, or exhibition opportunities, reach out to the conference secretariat:</p>
+        <p><strong>Email:</strong> director.rcs@uoh.edu.so | research@u
