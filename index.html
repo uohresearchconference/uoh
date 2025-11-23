@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>University of Hargeisa Research Conference</title>
+    <title>University of Hargeisa First International Research Conference</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,14 +12,19 @@
             background: #f7f7f7;
         }
         header {
-            background: #003366;
+            background: #003366; /* UoH dark blue */
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
         }
+        header img {
+            max-height: 80px;
+            display: block;
+            margin: 0 auto 10px;
+        }
         nav {
-            background: #0055a5;
-            padding: 10px;
+            background: #0055a5; /* UoH primary blue */
+            padding: 12px;
             text-align: center;
         }
         nav a {
@@ -27,28 +32,52 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700; /* gold hover */
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        h2 {
+            color: #003366;
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             margin-top: 40px;
             background: #003366;
             color: white;
+        }
+        ul.thematic-areas li {
+            margin-bottom: 8px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0055a5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #003366;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>University of Hargeisa Research Conference</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/60/University_of_Hargeisa_Logo.png" alt="University of Hargeisa Logo" />
+        <h1>University of Hargeisa First International Research Conference</h1>
         <p>Advancing Knowledge Through Innovation and Collaboration</p>
+        <p><strong>Dates: 29th & 30th April 2025</strong></p>
     </header>
 
     <nav>
@@ -61,22 +90,47 @@
 
     <div class="container" id="cfp">
         <h2>Call for Papers</h2>
-        <p>Welcome to the annual University of Hargeisa Research Conference. Researchers, scholars, and practitioners are invited to submit abstracts addressing topics across diverse disciplines...</p>
+        <p>We invite researchers, scholars, and practitioners to submit abstracts addressing the following thematic areas:</p>
+        <ul class="thematic-areas">
+            <li>Population Health and Social Well Being</li>
+            <li>Sustainable Development and Economic Diversification</li>
+            <li>Education, Technology and Human Capital</li>
+            <li>Governance, Peace Building and State Relations</li>
+            <li>Climate Change, Agriculture and Livestocks, Environmental Resilience</li>
+        </ul>
+        <a href="#" class="btn">Submit Abstract</a>
     </div>
 
     <div class="container" id="committee">
         <h2>Organizing Committee</h2>
         <ul>
-            <li>Conference Chair</li>
-            <li>Scientific Committee</li>
-            <li>Review Committee</li>
-            <li>Logistics & Administration</li>
+            <li>Conference Chair: Dr. Khalid Hassan – President, University of Hargeisa</li>
+            <li>Scientific Committee: Prof. Jonah Kiruja – Research Grants & Community Service</li>
+            <li>Review Committee: Dr. Ahmed Ali – Dean, College of Medicine & Health Sciences</li>
+            <li>Logistics & Administration: Ms. Nasra Osman – Conference Coordination</li>
         </ul>
     </div>
 
     <div class="container" id="program">
         <h2>Program</h2>
-        <p>Full program and session details will be published soon.</p>
+        <p><strong>29th April 2025:</strong></p>
+        <ul>
+            <li>08:30 – Registration</li>
+            <li>09:00 – Opening Ceremony & Welcome Remarks</li>
+            <li>10:00 – Keynote Address</li>
+            <li>11:30 – Coffee Break</li>
+            <li>12:00 – Parallel Sessions</li>
+            <li>14:00 – Lunch Break</li>
+            <li>15:00 – Poster Presentations</li>
+        </ul>
+        <p><strong>30th April 2025:</strong></p>
+        <ul>
+            <li>09:00 – Scientific Sessions</li>
+            <li>11:00 – Panel Discussions</li>
+            <li>13:00 – Lunch Break</li>
+            <li>14:00 – Awards & Certificates</li>
+            <li>15:00 – Closing Ceremony</li>
+        </ul>
     </div>
 
     <div class="container" id="venue">
@@ -86,7 +140,8 @@
 
     <div class="container" id="contact">
         <h2>Contact</h2>
-        <p>Email: research@uoh.edu.so</p>
+        <p>Email: <a href="mailto:director.rcs@uoh.edu.so">research@uoh.edu.so</a></p>
+        <p>Phone: +252 XXX XXX XXX</p>
     </div>
 
     <footer>
